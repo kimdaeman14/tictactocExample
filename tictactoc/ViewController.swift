@@ -269,6 +269,10 @@ class ViewController: UIViewController {
     @IBAction private func row4Column3(_ sender: UIButton){
         pushButtonArr5(arrayIndex: 3, booltype: bool)
         print()
+        Swift.print(arr5.startIndex)
+        Swift.print(arr5.endIndex)
+        Swift.print(arr5.index(after: 3))
+
     }
     @IBAction private func row4Column4(_ sender: UIButton){
         pushButtonArr5(arrayIndex: 4, booltype: bool)
