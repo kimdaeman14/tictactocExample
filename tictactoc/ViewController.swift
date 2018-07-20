@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var arr: [String] = []
     
     let zero = "⚪️"
     let one = "⚫️"
@@ -109,8 +108,32 @@ class ViewController: UIViewController {
         Swift.print(arr6)
         Swift.print(arr7)
         Swift.print(arr8)
+        Swift.print("")
+        Swift.print("")
+        
     }
     
+    @IBAction private func clear(_ sender: UIButton){
+        arr1.removeAll()
+        arr2.removeAll()
+        arr3.removeAll()
+        arr4.removeAll()
+        arr5.removeAll()
+        arr6.removeAll()
+        arr7.removeAll()
+        arr8.removeAll()
+        
+        arr1 = Array<String>(repeating: "  ", count: 7)
+        arr2 = Array<String>(repeating: "  ", count: 7)
+        arr3 = Array<String>(repeating: "  ", count: 7)
+        arr4 = Array<String>(repeating: "  ", count: 7)
+        arr5 = Array<String>(repeating: "  ", count: 7)
+        arr6 = Array<String>(repeating: "  ", count: 7)
+        arr7 = Array<String>(repeating: "  ", count: 7)
+        arr8 = Array<String>(repeating: "  ", count: 7)
+        
+        print()
+    }
     
     @IBAction private func row0Column0(_ sender: UIButton){
         pushButtonArr1(arrayIndex: 0, booltype: bool)
